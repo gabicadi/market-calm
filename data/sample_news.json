@@ -1,0 +1,27 @@
+[
+  {
+    "headline": "Oil prices rise on renewed Middle East supply concerns",
+    "summary": "Crude prices moved higher as traders reacted to possible disruptions in supply routes.",
+    "source": "https://example.com/oil"
+  },
+  {
+    "headline": "Global stocks slip after inflation data comes in above expectations",
+    "summary": "Investors reassessed rate-cut expectations after a hotter-than-expected inflation report.",
+    "source": "https://example.com/inflation"
+  },
+  {
+    "headline": "Gold gains as investors seek safety amid geopolitical uncertainty",
+    "summary": "Gold prices rose as uncertainty increased demand for defensive assets.",
+    "source": "https://example.com/gold"
+  },
+  {
+    "headline": "Tech shares rally after major company earnings beat forecasts",
+    "summary": "Strong earnings from a large technology firm lifted sentiment across the sector.",
+    "source": "https://example.com/tech"
+  },
+  {
+    "headline": "Shipping bottlenecks raise concerns about global trade costs",
+    "summary": "New delays in logistics networks may increase input costs for global companies.",
+    "source": "https://example.com/shipping"
+  }
+]

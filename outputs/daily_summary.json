@@ -1,0 +1,111 @@
+[
+  {
+    "headline": "Oil prices rise on renewed Middle East supply concerns",
+    "topic": "oil",
+    "impact_level": "Medium",
+    "affected": [
+      "Energy",
+      "Commodities",
+      "Global Equities"
+    ],
+    "why_it_matters": "Oil price changes can influence energy producers, transport costs, and broader inflation expectations.",
+    "calm_takeaway": "This is most relevant for energy exposure and inflation-sensitive sectors, not every holding equally.",
+    "source": "https://example.com/oil",
+    "portfolio_relevance": "High",
+    "relevant_holdings": [
+      "AAPL",
+      "MSFT",
+      "GLD"
+    ],
+    "overlap_tags": [
+      "Commodities",
+      "Global Equities"
+    ]
+  },
+  {
+    "headline": "Global stocks slip after inflation data comes in above expectations",
+    "topic": "inflation",
+    "impact_level": "High",
+    "affected": [
+      "Global Equities",
+      "Growth Stocks",
+      "Commodities"
+    ],
+    "why_it_matters": "Higher inflation can affect interest-rate expectations and put pressure on equity valuations, especially in rate-sensitive areas of the market.",
+    "calm_takeaway": "This matters broadly, but the strongest effects are usually concentrated in rate-sensitive parts of the market.",
+    "source": "https://example.com/inflation",
+    "portfolio_relevance": "High",
+    "relevant_holdings": [
+      "AAPL",
+      "MSFT",
+      "GLD"
+    ],
+    "overlap_tags": [
+      "Commodities",
+      "Global Equities"
+    ]
+  },
+  {
+    "headline": "Gold gains as investors seek safety amid geopolitical uncertainty",
+    "topic": "gold",
+    "impact_level": "Medium",
+    "affected": [
+      "Gold",
+      "Defensive Assets",
+      "Commodities"
+    ],
+    "why_it_matters": "Gold often reacts to uncertainty and can reflect increased demand for defensive assets.",
+    "calm_takeaway": "This is more useful as a signal of caution than a reason to panic.",
+    "source": "https://example.com/gold",
+    "portfolio_relevance": "High",
+    "relevant_holdings": [
+      "GLD"
+    ],
+    "overlap_tags": [
+      "Commodities",
+      "Gold"
+    ]
+  },
+  {
+    "headline": "Tech shares rally after major company earnings beat forecasts",
+    "topic": "earnings",
+    "impact_level": "Medium",
+    "affected": [
+      "Technology",
+      "Global Equities"
+    ],
+    "why_it_matters": "Strong or weak earnings can shift sentiment toward a sector and alter expectations for future growth.",
+    "calm_takeaway": "This may move one sector more than the market as a whole.",
+    "source": "https://example.com/tech",
+    "portfolio_relevance": "High",
+    "relevant_holdings": [
+      "AAPL",
+      "MSFT"
+    ],
+    "overlap_tags": [
+      "Global Equities",
+      "Technology"
+    ]
+  },
+  {
+    "headline": "Shipping bottlenecks raise concerns about global trade costs",
+    "topic": "supply_chain",
+    "impact_level": "Medium",
+    "affected": [
+      "Industrials",
+      "Consumer Goods",
+      "Global Equities"
+    ],
+    "why_it_matters": "Supply disruptions can raise costs for companies and affect margins across multiple sectors.",
+    "calm_takeaway": "This is worth watching if disruptions persist, but one headline alone may not change the bigger picture.",
+    "source": "https://example.com/shipping",
+    "portfolio_relevance": "Medium",
+    "relevant_holdings": [
+      "AAPL",
+      "MSFT"
+    ],
+    "overlap_tags": [
+      "Global Equities"
+    ]
+  }
+]
