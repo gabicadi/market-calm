@@ -89,19 +89,38 @@ def normalize_text(article: dict[str, Any]) -> str:
     return f"{headline} {summary}".lower()
 
 
-def detect_topic(article: dict[str, Any]) -> str:
+def detect_topic(article: dict[str, Any]) -> tuple[str, str]:
     """
-    Detect a topic using simple keyword matching.
-    Returns 'other' when no topic has a strong keyword match.
+    Returns:
+      - topic
+      - match_reason (for transparency)
     """
     text = normalize_text(article)
 
+    topic_scores = {}
+    match_reasons = {}
+
     for topic, keywords in TOPIC_KEYWORDS.items():
+        score = 0
+        matched = []
+
         for keyword in keywords:
             if keyword in text:
-                return topic
+                score += 1
+                matched.append(keyword)
 
-    return "other"
+        if score > 0:
+            topic_scores[topic] = score
+            match_reasons[topic] = matched
+
+    if not topic_scores:
+        return "other", "No keyword match"
+
+    # pick topic with highest score
+    best_topic = max(topic_scores, key=topic_scores.get)
+    reason = f"Matched keywords: {', '.join(match_reasons[best_topic])}"
+
+    return best_topic, reason
 
 
 def get_affected_assets(topic: str) -> list[str]:
@@ -126,7 +145,7 @@ def get_calm_takeaway(topic: str) -> str:
 
 def process_article(article: dict[str, Any]) -> dict[str, Any]:
     """Transform a raw article into your structured output format."""
-    topic = detect_topic(article)
+    topic, match_reason = detect_topic(article)
 
     return {
         "headline": article.get("headline", ""),
@@ -136,4 +155,5 @@ def process_article(article: dict[str, Any]) -> dict[str, Any]:
         "why_it_matters": get_why_it_matters(topic),
         "calm_takeaway": get_calm_takeaway(topic),
         "source": article.get("source", ""),
+        "match_reason": match_reason,
     }
